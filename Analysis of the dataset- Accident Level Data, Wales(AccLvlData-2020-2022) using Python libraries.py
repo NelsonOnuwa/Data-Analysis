@@ -1,17 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-#                                        QUESTION 1
 
 #             Analysis of the dataset- Accident Level Data, Wales(AccLvlData-2020-2022) using Python libraries
-
-# In[ ]:
-
-
-
-
-
-# In[2]:
 
 
 import plotly.express as px
