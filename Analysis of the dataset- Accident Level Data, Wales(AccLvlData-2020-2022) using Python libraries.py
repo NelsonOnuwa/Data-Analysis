@@ -1,4 +1,6 @@
+Data Analysis
 
+Data Analysis is the 
 
 #             Analysis of the dataset- Accident Level Data, Wales(AccLvlData-2020-2022) using Python libraries
 
@@ -12,19 +14,19 @@ from pandas import DataFrame
 
 #                   Data from the CSV file with name "AccLvlData-2020" can be read using:
 
-# In[3]:
+
 
 
 pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2020.csv")
 
 
-# In[4]:
+
 
 
 pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2021.csv")
 
 
-# In[5]:
+
 
 
 pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2022.csv")
@@ -32,7 +34,7 @@ pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\
 
 #                                    Assigning....
 
-# In[6]:
+
 
 
 AccLvlData2020 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2020.csv")
@@ -40,15 +42,12 @@ AccLvlData2020 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD 
 AccLvlData2020 
 
 
-# In[7]:
-
-
 AccLvlData2021 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2021.csv")
 
 AccLvlData2021
 
 
-# In[8]:
+
 
 
 AccLvlData2022 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2022.csv")
@@ -56,44 +55,42 @@ AccLvlData2022 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD 
 AccLvlData2022 
 
 
-# In[ ]:
 
 
 
 
 
 #                       Data Cleaning Steps with Python and Pandas include:
-#         
-# 
-# 1.Basic exploratory data analysis
-# 
-# 2.Detect and remove missing data
-# 
-# 3.Drop unnecessary columns and rows
-# 
-# 4.Detect outliers
-# 
-# 5.Inconsistent data
-# 
-# 6.Irrelevant features
-# 
-# 
 
-# In[ ]:
+1.Basic exploratory data analysis
+ 
+2.Detect and remove missing data
+ 
+3.Drop unnecessary columns and rows
+ 
+4.Detect outliers
+
+5.Inconsistent data
+
+6.Irrelevant features
+ 
+ 
+
+
 
 
 
 
 
 #                       Step 1: 
-# 
+ 
 # Exploratory data analysis:
-#     
-# It shows the data types, shape and size, missing values, sample data.
+     
+ It shows the data types, shape and size, missing values, sample data.
+
 
 #                  view the top ten rows of the total columns
 
-# In[9]:
 
 
 AccLvlData2020.head(10)
