@@ -2,7 +2,7 @@ Data Analysis
 
 Data Analysis is the 
 
-#             Analysis of the dataset- Accident Level Data, Wales(AccLvlData-2020-2022) using Python libraries
+               Analysis of the dataset- Accident Level Data, Wales(AccLvlData-2020-2022) using Python libraries
 
 
 import plotly.express as px
@@ -12,46 +12,29 @@ import pandas as pd
 from pandas import DataFrame
 
 
-#                   Data from the CSV file with name "AccLvlData-2020" can be read using:
-
-
-
+                  Data from the CSV file with name "AccLvlData-2020" can be read using:
 
 pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2020.csv")
 
-
-
-
-
 pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2021.csv")
-
-
-
-
 
 pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2022.csv")
 
 
-#                                    Assigning....
+                                    Assigning....
 
 
 
 
 AccLvlData2020 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2020.csv")
-
 AccLvlData2020 
 
 
 AccLvlData2021 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2021.csv")
-
 AccLvlData2021
 
 
-
-
-
 AccLvlData2022 = pd.read_csv("C:\\Users\\User\\OneDrive\\Documents\\PGD-DP\\PGD DP RESUBMISSION\\AccLvlData-2022.csv")
-
 AccLvlData2022 
 
 
@@ -60,7 +43,7 @@ AccLvlData2022
 
 
 
-#                       Data Cleaning Steps with Python and Pandas include:
+                       Data Cleaning Steps with Python and Pandas include:
 
 1.Basic exploratory data analysis
  
@@ -82,229 +65,131 @@ AccLvlData2022
 
 
 
-#                       Step 1: 
+                       Step 1: 
  
-# Exploratory data analysis:
+ Exploratory data analysis:
      
  It shows the data types, shape and size, missing values, sample data.
 
 
-#                  view the top ten rows of the total columns
+                 To view the top ten rows of the total columns
 
 
 
 AccLvlData2020.head(10)
 
-
-# In[10]:
-
-
 AccLvlData2021.head(10)
-
-
-# In[11]:
-
 
 AccLvlData2022.head(10)
 
 
-# In[ ]:
 
 
 
 
+                view the bottom ten rows of the total columns
 
-#                view the bottom ten rows of the total columns
-
-# In[12]:
 
 
 AccLvlData2020.tail(10)
 
-
-# In[13]:
-
-
 AccLvlData2021.tail(10)
-
-
-# In[14]:
-
 
 AccLvlData2022.tail(10)
 
 
-# In[ ]:
 
 
 
 
 
-#                  view a number of random sample of the dataset
 
-# In[15]:
+                    view a number of random sample of the dataset
+
 
 
 AccLvlData2020.sample(10)
 
-
-# In[16]:
-
-
 AccLvlData2021.sample(10)
-
-
-# In[17]:
-
 
 AccLvlData2022.sample(10)
 
 
-# In[ ]:
 
 
 
 
-
-#                 Determine the total number of rows and columns 
-#     
-# 
-# The result is a tuple showing 2864 rows and 49 columns
-# 
-
-# In[18]:
-
-
+                 Determine the total number of rows and columns 
+     
+ 
+ The result is a tuple showing 2864 rows and 49 columns
+ 
 AccLvlData2020.shape
-
-
-# In[19]:
-
 
 AccLvlData2021.shape
 
-
-# In[20]:
-
-
 AccLvlData2020.shape
 
 
-# In[ ]:
 
 
 
 
 
-#                  list the columns
-
-# In[21]:
-
+                To list the columns
 
 AccLvlData2020.columns
 
-
-# In[ ]:
-
-
-
-
-
-# In[22]:
-
-
 AccLvlData2021.columns
-
-
-# In[23]:
-
 
 AccLvlData2022.columns
 
 
-# In[ ]:
 
 
 
 
 
-#                      To get the dataframe,columns,data types and memory
-
-# In[24]:
+                      To get the dataframe,columns,data types and memory
 
 
 AccLvlData2020.info()
 
-
-# In[25]:
-
-
 AccLvlData2021.info()
-
-
-# In[26]:
-
 
 AccLvlData2022.info()
 
 
-# In[ ]:
-
-
-
-
-
-# In[27]:
 
 
 AccLvlData2020.info
 
-
-# In[28]:
-
-
 AccLvlData2021.info
-
-
-# In[29]:
-
 
 AccLvlData2022.info
 
 
-# In[ ]:
 
 
 
 
 
-#                              renaming the object columns
-
-# In[30]:
-
+                              renaming the object columns
 
 AccLvlData2020.rename(columns = {"Date Of Accident" : "Date_Of_Accident", "Day Of Accident" : "Day_Of_Accident","Local Authority Code" : "Local_Authority_Code"}, inplace = True)
-
 AccLvlData2020.describe (include='object')
 
 
-# In[31]:
-
-
 AccLvlData2021.rename(columns = {"Date Of Accident" : "Date_Of_Accident", "Day Of Accident" : "Day_Of_Accident","Local Authority Code" : "Local_Authority_Code"}, inplace = True)
-
 AccLvlData2021.describe (include='object')
 
 
-# In[32]:
-
 
 AccLvlData2022.rename(columns = {"Date Of Accident" : "Date_Of_Accident", "Day Of Accident" : "Day_Of_Accident","Local Authority Code" : "Local_Authority_Code"}, inplace = True)
-
 AccLvlData2022.describe (include='object')
 
 
-# In[ ]:
+
 
 
 
